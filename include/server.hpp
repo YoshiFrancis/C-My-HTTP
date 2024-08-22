@@ -3,23 +3,26 @@
 
 #include <string>
 #include <unordered_map>
+#include "response.hpp"
+#include "request.hpp"
 
 class HTTPServer {
 public:
-  HTTPServer(std::string ip, int port);
+  HTTPServer() {};
   ~HTTPServer();
 
 private:
   // socket file descriptor server is listeninig on
-  int m_socketfd;
+  int _socketfd;
   // paths mapping to handler functions
-  std::unordered_map<std::string, void (*)(std::string request, int responseSocket)> handlerFuncs;
+  std::unordered_map<std::string, void (*)(Request request, Response res)> handlerFuncs;
 public:
   void listenAndServe(std::string address, int port);
-  void handlerFunc(std::string path, void (*func)(std::string request, int responseSocket));
+  void handlerFunc(std::string path, void (*func)(Request req, Response res));
 private:
   void handleConnection(int socket) const;
-  void parse(std::vector<char>& message);
+  Request parse(std::vector<char>& message) const;
+
 };
 
 #endif

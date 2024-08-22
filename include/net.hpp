@@ -78,6 +78,9 @@ namespace net {
     return newfd;
   }
 
+  // returns -1 if there was a reading error (internal)
+  // return 0 if the connection has clased
+  // returns 1 if successful
   int Read(int sockfd, std::vector<char>& buff) {
     int status = recv(sockfd, &buff, buff.size(), 0);
     if (status == -1) {
