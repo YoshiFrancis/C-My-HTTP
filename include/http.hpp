@@ -1,15 +1,15 @@
-#ifndef SERVER_H
-#define SERVER_H
+#ifndef HTTP_H
+#define HTTP_H
 
 #include <string>
 #include <unordered_map>
 #include "response.hpp"
 #include "request.hpp"
 
-class HTTPServer {
+class http {
 public:
-  HTTPServer() {};
-  ~HTTPServer();
+  http() {};
+  ~http();
 
 private:
   // socket file descriptor server is listeninig on
