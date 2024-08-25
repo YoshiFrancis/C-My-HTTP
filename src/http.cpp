@@ -2,7 +2,9 @@
 #include "../include/net.hpp"
 #include "../include/request.hpp"
 #include "../include/response.hpp"
+#include "../include/reqReader.hpp"
 #include <string>
+#include <iostream>
 
 http::~http() {
   net::Close(_socketfd);
@@ -16,27 +18,15 @@ void http::listenAndServe(std::string address, int port) {
   }
 }
 
-void http::handlerFunc(std::string path, void (*func)(Request request, Response res)) {
+void http::handlerFunc(std::string path, void (*func)(Request& request, Response& res)) {
   handlerFuncs[path] = func;
 }
 
 void http::handleConnection(int connfd) const {
-  std::vector<char> buff(1028);
-  int status = net::Read(connfd, buff);
-  while (status != 0) {
-    std::vector<char> newbuff(1028);
-    status = net::Read(connfd, newbuff);
-    buff.insert(buff.end(), newbuff.begin(), newbuff.end());
-  }
-
-  Request req = parse(buff); 
+  reqReader r(connfd);
+  Request req = r.read();
   Response res;  // need to work on initialization
 
   handlerFuncs.at(req.getTarget())(req, res);
-}
-
-
-Request http::parse(std::vector<char>& message) const {
-
-  // TODO
+  net::Send(connfd, res.serialize());
 }

@@ -1,4 +1,5 @@
 #include "../include/reqReader.hpp"
+#include "../include/net.hpp"
 #include <string>
 
 #define FAILURE 0
@@ -8,6 +9,13 @@ reqReader::reqReader(int connfd) : _connfd(connfd)
 { }
 
 std::optional<Request> reqReader::read() {
+  int status = net::Read(_connfd, _buff);
+  while (status != 0) {
+    std::vector<char> newbuff(1028);
+    status = net::Read(_connfd, newbuff);
+    _buff.insert(_buff.end(), newbuff.begin(), newbuff.end());
+  }
+  
   std::string method = readNextWord();
   std::string target = readNextWord();
   std::string protocol = readNextWord();
