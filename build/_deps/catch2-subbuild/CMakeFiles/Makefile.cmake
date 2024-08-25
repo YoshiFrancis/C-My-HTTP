@@ -8,12 +8,10 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "CMakeFiles/3.29.1/CMakeSystem.cmake"
-  "CMakeLists.txt"
   "catch2-populate-prefix/tmp/catch2-populate-mkdirs.cmake"
-  "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeDetermineSystem.cmake"
+  "CMakeLists.txt"
   "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeInitializeConfigs.cmake"
-  "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeSystem.cmake.in"
   "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
   "/opt/homebrew/Cellar/cmake/3.29.1/share/cmake/Modules/ExternalProject.cmake"
@@ -38,7 +36,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/3.29.1/CMakeSystem.cmake"
   "catch2-populate-prefix/tmp/catch2-populate-mkdirs.cmake"
   "catch2-populate-prefix/tmp/catch2-populate-gitclone.cmake"
   "catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-gitinfo.txt"

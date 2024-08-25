@@ -1,0 +1,6 @@
+- add threading to concurrently handle multiple users
+- support caching/authorization
+- work to support all status codes
+- make more flexible template rendering
+- implement rigorous testing
+- implement Aim training site with HTTP server

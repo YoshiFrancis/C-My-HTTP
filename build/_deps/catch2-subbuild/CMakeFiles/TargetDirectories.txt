@@ -1,3 +1,3 @@
-/Users/fozua/Desktop/C-My-Http/build/_deps/catch2-subbuild/CMakeFiles/catch2-populate.dir
-/Users/fozua/Desktop/C-My-Http/build/_deps/catch2-subbuild/CMakeFiles/edit_cache.dir
-/Users/fozua/Desktop/C-My-Http/build/_deps/catch2-subbuild/CMakeFiles/rebuild_cache.dir
+/Users/fozua/Desktop/C-My-HTTP/build/_deps/catch2-subbuild/CMakeFiles/catch2-populate.dir
+/Users/fozua/Desktop/C-My-HTTP/build/_deps/catch2-subbuild/CMakeFiles/edit_cache.dir
+/Users/fozua/Desktop/C-My-HTTP/build/_deps/catch2-subbuild/CMakeFiles/rebuild_cache.dir

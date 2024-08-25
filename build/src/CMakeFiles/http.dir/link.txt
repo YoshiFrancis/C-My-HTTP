@@ -1,2 +1,2 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libhttp.a CMakeFiles/http.dir/server.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ar qc libhttp.a CMakeFiles/http.dir/http.cpp.o CMakeFiles/http.dir/reqReader.cpp.o CMakeFiles/http.dir/request.cpp.o CMakeFiles/http.dir/response.cpp.o
 /Library/Developer/CommandLineTools/usr/bin/ranlib libhttp.a

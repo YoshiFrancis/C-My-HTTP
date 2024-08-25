@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/Users/fozua/Desktop/C-My-Http/build/_deps/catch2-subbuild")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/fozua/Desktop/C-My-Http/build/_deps/catch2-subbuild")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/fozua/Desktop/C-My-HTTP/build/_deps/catch2-subbuild")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

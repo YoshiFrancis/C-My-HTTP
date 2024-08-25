@@ -38,8 +38,8 @@ private:
 
 public:
   void writeStatus(StatusCode code);
-  void writeHeader(std::string& key, std::string& val);
-  void write(std::string& arg); 
+  void writeHeader(std::string key, std::string val);
+  void write(std::string arg); 
   std::string serialize() const;
 };
 

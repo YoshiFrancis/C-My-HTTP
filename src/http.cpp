@@ -24,9 +24,11 @@ void http::handlerFunc(std::string path, void (*func)(Request& request, Response
 
 void http::handleConnection(int connfd) const {
   reqReader r(connfd);
-  Request req = r.read();
+  std::optional<Request> req = r.read();
+  if (!req.has_value())
+    return;
   Response res;  // need to work on initialization
 
-  handlerFuncs.at(req.getTarget())(req, res);
+  handlerFuncs.at(req.value().getTarget())(req.value(), res);
   net::Send(connfd, res.serialize());
 }

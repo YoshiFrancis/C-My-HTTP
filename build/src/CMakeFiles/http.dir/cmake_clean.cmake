@@ -1,6 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/http.dir/server.cpp.o"
-  "CMakeFiles/http.dir/server.cpp.o.d"
+  "CMakeFiles/http.dir/http.cpp.o"
+  "CMakeFiles/http.dir/http.cpp.o.d"
+  "CMakeFiles/http.dir/reqReader.cpp.o"
+  "CMakeFiles/http.dir/reqReader.cpp.o.d"
+  "CMakeFiles/http.dir/request.cpp.o"
+  "CMakeFiles/http.dir/request.cpp.o.d"
+  "CMakeFiles/http.dir/response.cpp.o"
+  "CMakeFiles/http.dir/response.cpp.o.d"
   "libhttp.a"
   "libhttp.pdb"
 )

@@ -69,31 +69,79 @@ include src/CMakeFiles/http.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/http.dir/flags.make
 
-src/CMakeFiles/http.dir/server.cpp.o: src/CMakeFiles/http.dir/flags.make
-src/CMakeFiles/http.dir/server.cpp.o: /Users/fozua/Desktop/C-My-Http/src/server.cpp
-src/CMakeFiles/http.dir/server.cpp.o: src/CMakeFiles/http.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/fozua/Desktop/C-My-Http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/http.dir/server.cpp.o"
-	cd /Users/fozua/Desktop/C-My-Http/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/http.dir/server.cpp.o -MF CMakeFiles/http.dir/server.cpp.o.d -o CMakeFiles/http.dir/server.cpp.o -c /Users/fozua/Desktop/C-My-Http/src/server.cpp
+src/CMakeFiles/http.dir/http.cpp.o: src/CMakeFiles/http.dir/flags.make
+src/CMakeFiles/http.dir/http.cpp.o: /Users/fozua/Desktop/C-My-Http/src/http.cpp
+src/CMakeFiles/http.dir/http.cpp.o: src/CMakeFiles/http.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/fozua/Desktop/C-My-Http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/http.dir/http.cpp.o"
+	cd /Users/fozua/Desktop/C-My-Http/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/http.dir/http.cpp.o -MF CMakeFiles/http.dir/http.cpp.o.d -o CMakeFiles/http.dir/http.cpp.o -c /Users/fozua/Desktop/C-My-Http/src/http.cpp
 
-src/CMakeFiles/http.dir/server.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/http.dir/server.cpp.i"
-	cd /Users/fozua/Desktop/C-My-Http/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozua/Desktop/C-My-Http/src/server.cpp > CMakeFiles/http.dir/server.cpp.i
+src/CMakeFiles/http.dir/http.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/http.dir/http.cpp.i"
+	cd /Users/fozua/Desktop/C-My-Http/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozua/Desktop/C-My-Http/src/http.cpp > CMakeFiles/http.dir/http.cpp.i
 
-src/CMakeFiles/http.dir/server.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/http.dir/server.cpp.s"
-	cd /Users/fozua/Desktop/C-My-Http/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozua/Desktop/C-My-Http/src/server.cpp -o CMakeFiles/http.dir/server.cpp.s
+src/CMakeFiles/http.dir/http.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/http.dir/http.cpp.s"
+	cd /Users/fozua/Desktop/C-My-Http/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozua/Desktop/C-My-Http/src/http.cpp -o CMakeFiles/http.dir/http.cpp.s
+
+src/CMakeFiles/http.dir/reqReader.cpp.o: src/CMakeFiles/http.dir/flags.make
+src/CMakeFiles/http.dir/reqReader.cpp.o: /Users/fozua/Desktop/C-My-Http/src/reqReader.cpp
+src/CMakeFiles/http.dir/reqReader.cpp.o: src/CMakeFiles/http.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/fozua/Desktop/C-My-Http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/http.dir/reqReader.cpp.o"
+	cd /Users/fozua/Desktop/C-My-Http/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/http.dir/reqReader.cpp.o -MF CMakeFiles/http.dir/reqReader.cpp.o.d -o CMakeFiles/http.dir/reqReader.cpp.o -c /Users/fozua/Desktop/C-My-Http/src/reqReader.cpp
+
+src/CMakeFiles/http.dir/reqReader.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/http.dir/reqReader.cpp.i"
+	cd /Users/fozua/Desktop/C-My-Http/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozua/Desktop/C-My-Http/src/reqReader.cpp > CMakeFiles/http.dir/reqReader.cpp.i
+
+src/CMakeFiles/http.dir/reqReader.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/http.dir/reqReader.cpp.s"
+	cd /Users/fozua/Desktop/C-My-Http/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozua/Desktop/C-My-Http/src/reqReader.cpp -o CMakeFiles/http.dir/reqReader.cpp.s
+
+src/CMakeFiles/http.dir/request.cpp.o: src/CMakeFiles/http.dir/flags.make
+src/CMakeFiles/http.dir/request.cpp.o: /Users/fozua/Desktop/C-My-Http/src/request.cpp
+src/CMakeFiles/http.dir/request.cpp.o: src/CMakeFiles/http.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/fozua/Desktop/C-My-Http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/http.dir/request.cpp.o"
+	cd /Users/fozua/Desktop/C-My-Http/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/http.dir/request.cpp.o -MF CMakeFiles/http.dir/request.cpp.o.d -o CMakeFiles/http.dir/request.cpp.o -c /Users/fozua/Desktop/C-My-Http/src/request.cpp
+
+src/CMakeFiles/http.dir/request.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/http.dir/request.cpp.i"
+	cd /Users/fozua/Desktop/C-My-Http/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozua/Desktop/C-My-Http/src/request.cpp > CMakeFiles/http.dir/request.cpp.i
+
+src/CMakeFiles/http.dir/request.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/http.dir/request.cpp.s"
+	cd /Users/fozua/Desktop/C-My-Http/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozua/Desktop/C-My-Http/src/request.cpp -o CMakeFiles/http.dir/request.cpp.s
+
+src/CMakeFiles/http.dir/response.cpp.o: src/CMakeFiles/http.dir/flags.make
+src/CMakeFiles/http.dir/response.cpp.o: /Users/fozua/Desktop/C-My-Http/src/response.cpp
+src/CMakeFiles/http.dir/response.cpp.o: src/CMakeFiles/http.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/fozua/Desktop/C-My-Http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/http.dir/response.cpp.o"
+	cd /Users/fozua/Desktop/C-My-Http/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/http.dir/response.cpp.o -MF CMakeFiles/http.dir/response.cpp.o.d -o CMakeFiles/http.dir/response.cpp.o -c /Users/fozua/Desktop/C-My-Http/src/response.cpp
+
+src/CMakeFiles/http.dir/response.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/http.dir/response.cpp.i"
+	cd /Users/fozua/Desktop/C-My-Http/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/fozua/Desktop/C-My-Http/src/response.cpp > CMakeFiles/http.dir/response.cpp.i
+
+src/CMakeFiles/http.dir/response.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/http.dir/response.cpp.s"
+	cd /Users/fozua/Desktop/C-My-Http/build/src && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/fozua/Desktop/C-My-Http/src/response.cpp -o CMakeFiles/http.dir/response.cpp.s
 
 # Object files for target http
 http_OBJECTS = \
-"CMakeFiles/http.dir/server.cpp.o"
+"CMakeFiles/http.dir/http.cpp.o" \
+"CMakeFiles/http.dir/reqReader.cpp.o" \
+"CMakeFiles/http.dir/request.cpp.o" \
+"CMakeFiles/http.dir/response.cpp.o"
 
 # External object files for target http
 http_EXTERNAL_OBJECTS =
 
-src/libhttp.a: src/CMakeFiles/http.dir/server.cpp.o
+src/libhttp.a: src/CMakeFiles/http.dir/http.cpp.o
+src/libhttp.a: src/CMakeFiles/http.dir/reqReader.cpp.o
+src/libhttp.a: src/CMakeFiles/http.dir/request.cpp.o
+src/libhttp.a: src/CMakeFiles/http.dir/response.cpp.o
 src/libhttp.a: src/CMakeFiles/http.dir/build.make
 src/libhttp.a: src/CMakeFiles/http.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/fozua/Desktop/C-My-Http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libhttp.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/fozua/Desktop/C-My-Http/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libhttp.a"
 	cd /Users/fozua/Desktop/C-My-Http/build/src && $(CMAKE_COMMAND) -P CMakeFiles/http.dir/cmake_clean_target.cmake
 	cd /Users/fozua/Desktop/C-My-Http/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/http.dir/link.txt --verbose=$(VERBOSE)
 

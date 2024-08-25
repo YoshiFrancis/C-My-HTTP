@@ -3,19 +3,21 @@
 #include <string>
 
 void Response::writeStatus(Response::StatusCode code) {
-  using enum Response::StatusCode;
-  switch (Response::StatusCode code) {
-    case OK:
-      _status = std::to_string(OK);
-      _status_desc = "OK";
-      break;
-  }
+  _status = "200";
+  _status_desc = "OK";
+  // using enum Response::StatusCode;
+  // switch (Response::StatusCode code) {
+  //   case OK:
+  //     _status = std::to_string(OK);
+  //     _status_desc = "OK";
+  //     break;
+  // }
 }
 
-void Response::write(std::string& arg) {
+void Response::write(std::string arg) {
   _body.append(arg);
 }
-void Response::writeHeader(std::string& key, std::string& val) {
+void Response::writeHeader(std::string key, std::string val) {
   _header[key] = val;
 }
 

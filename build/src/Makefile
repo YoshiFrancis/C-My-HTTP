@@ -140,29 +140,101 @@ http/fast:
 	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/build
 .PHONY : http/fast
 
-server.o: server.cpp.o
-.PHONY : server.o
+http.o: http.cpp.o
+.PHONY : http.o
 
 # target to build an object file
-server.cpp.o:
-	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/server.cpp.o
-.PHONY : server.cpp.o
+http.cpp.o:
+	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/http.cpp.o
+.PHONY : http.cpp.o
 
-server.i: server.cpp.i
-.PHONY : server.i
+http.i: http.cpp.i
+.PHONY : http.i
 
 # target to preprocess a source file
-server.cpp.i:
-	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/server.cpp.i
-.PHONY : server.cpp.i
+http.cpp.i:
+	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/http.cpp.i
+.PHONY : http.cpp.i
 
-server.s: server.cpp.s
-.PHONY : server.s
+http.s: http.cpp.s
+.PHONY : http.s
 
 # target to generate assembly for a file
-server.cpp.s:
-	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/server.cpp.s
-.PHONY : server.cpp.s
+http.cpp.s:
+	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/http.cpp.s
+.PHONY : http.cpp.s
+
+reqReader.o: reqReader.cpp.o
+.PHONY : reqReader.o
+
+# target to build an object file
+reqReader.cpp.o:
+	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/reqReader.cpp.o
+.PHONY : reqReader.cpp.o
+
+reqReader.i: reqReader.cpp.i
+.PHONY : reqReader.i
+
+# target to preprocess a source file
+reqReader.cpp.i:
+	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/reqReader.cpp.i
+.PHONY : reqReader.cpp.i
+
+reqReader.s: reqReader.cpp.s
+.PHONY : reqReader.s
+
+# target to generate assembly for a file
+reqReader.cpp.s:
+	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/reqReader.cpp.s
+.PHONY : reqReader.cpp.s
+
+request.o: request.cpp.o
+.PHONY : request.o
+
+# target to build an object file
+request.cpp.o:
+	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/request.cpp.o
+.PHONY : request.cpp.o
+
+request.i: request.cpp.i
+.PHONY : request.i
+
+# target to preprocess a source file
+request.cpp.i:
+	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/request.cpp.i
+.PHONY : request.cpp.i
+
+request.s: request.cpp.s
+.PHONY : request.s
+
+# target to generate assembly for a file
+request.cpp.s:
+	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/request.cpp.s
+.PHONY : request.cpp.s
+
+response.o: response.cpp.o
+.PHONY : response.o
+
+# target to build an object file
+response.cpp.o:
+	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/response.cpp.o
+.PHONY : response.cpp.o
+
+response.i: response.cpp.i
+.PHONY : response.i
+
+# target to preprocess a source file
+response.cpp.i:
+	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/response.cpp.i
+.PHONY : response.cpp.i
+
+response.s: response.cpp.s
+.PHONY : response.s
+
+# target to generate assembly for a file
+response.cpp.s:
+	cd /Users/fozua/Desktop/C-My-Http/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/http.dir/build.make src/CMakeFiles/http.dir/response.cpp.s
+.PHONY : response.cpp.s
 
 # Help Target
 help:
@@ -174,9 +246,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... http"
-	@echo "... server.o"
-	@echo "... server.i"
-	@echo "... server.s"
+	@echo "... http.o"
+	@echo "... http.i"
+	@echo "... http.s"
+	@echo "... reqReader.o"
+	@echo "... reqReader.i"
+	@echo "... reqReader.s"
+	@echo "... request.o"
+	@echo "... request.i"
+	@echo "... request.s"
+	@echo "... response.o"
+	@echo "... response.i"
+	@echo "... response.s"
 .PHONY : help
 
 
